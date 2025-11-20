@@ -20,10 +20,14 @@ app.use(express.json());
 // Allow requests from your frontend (React at port 5173)
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: [
+      'http://localhost:5173',
+      'https://mswd-ecommerce-six.vercel.app'   // your Vercel domain
+    ],
     credentials: true,
   })
 );
+
 
 // Security headers — allow images from other origins
 app.use(
