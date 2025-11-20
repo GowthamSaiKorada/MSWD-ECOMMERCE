@@ -21,9 +21,9 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      'http://localhost:5173',
-      'https://mswd-ecommerce-six.vercel.app'   // your Vercel domain
-    ],
+  'http://localhost:5173',
+  'https://mswd-ecommerce-six.vercel.app'
+],
     credentials: true,
   })
 );
